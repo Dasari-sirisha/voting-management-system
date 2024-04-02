@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:chartreuse
+        }
+        button{
+            color:rgb(yellow, rgb(28, 0, 128),pink);
+        }
+        h2{
+            color:red;
+            text-align: center;
+
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <center>
+    <h2>This is my viewnotes</h2>
+    {% if data %}
+    {% for i in data %}
+    {{ i[0]}}
+    {% endfor %}
+    {% endif %}
+    {{data[1]}}
+ 
+    </center>
+    
+</body>
+</html>
